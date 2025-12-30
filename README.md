@@ -97,6 +97,9 @@ Power BI connects to the views and provides:
   load_data.sql   # Inserts cleaned data into the schema 
   views.sql       # Reporting views for Power BI 
 /powerbi/         # PBIX file and/or dashboard screenshots 
+                  # Download the dashboard:
+                  #[Baltimore_City_Visuals.zip](https://github.com/user-attachments/files/24387190/Baltimore_City_Visuals.zip)
+
 /docs/            # Architecture diagram, notes, supporting documentation 
   README.md           # Project overview and documentation
 
