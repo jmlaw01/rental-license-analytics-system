@@ -14,7 +14,8 @@ CREATE TABLE IF NOT EXISTS property (
     property_type VARCHAR(30),
     total_unit_count INT,
     INDEX (address)
-) ENGINE=InnoDB;
+) ENGINE=InnoDB
+;
 
 -- Party information table
 CREATE TABLE IF NOT EXISTS party_information (
@@ -26,7 +27,8 @@ CREATE TABLE IF NOT EXISTS party_information (
     zip_code VARCHAR(50),
     phone_number VARCHAR(20),
     email VARCHAR(64)
-) ENGINE=InnoDB;
+) ENGINE=InnoDB
+;
 
 -- Junction table linking properties to parties with roles
 CREATE TABLE IF NOT EXISTS property_party_role (
@@ -40,7 +42,8 @@ CREATE TABLE IF NOT EXISTS property_party_role (
     FOREIGN KEY (party_id) REFERENCES party_information(party_id)
         ON DELETE CASCADE
         ON UPDATE CASCADE
-) ENGINE=InnoDB;
+) ENGINE=InnoDB
+;
 
 -- Rental license table
 CREATE TABLE IF NOT EXISTS rental_license (
@@ -52,10 +55,11 @@ CREATE TABLE IF NOT EXISTS rental_license (
         ON DELETE CASCADE
         ON UPDATE CASCADE,
     INDEX (license_number)
-) ENGINE=InnoDB;
+) ENGINE=InnoDB
+;
 
 -- Staging table
-CREATE TABLE `raw_scrape` (
+CREATE TABLE IF NOT EXISTS raw_scrape (
   `address` varchar(255) DEFAULT NULL,
   `license_expiration_date` date DEFAULT NULL,
   `existing_license_number` varchar(100) DEFAULT NULL,
@@ -75,4 +79,5 @@ CREATE TABLE `raw_scrape` (
   `responsible_officer_zip_code` varchar(50) DEFAULT NULL,
   `responsible_officer_telephone` varchar(50) DEFAULT NULL,
   `responsible_officer_email_address` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB
+;
