@@ -16,7 +16,7 @@ The goal is to transform messy, inconsistent source data into a scalable, valida
 - **SQL** — Modeling, joins, aggregations  
 - **Power BI** — Star schema modeling, DAX, interactive dashboard  
 - **GitHub** — Version control and documentation
-- 
+
 ## Features
 
 ### **Python ETL Pipeline**
