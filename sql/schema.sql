@@ -53,3 +53,26 @@ CREATE TABLE IF NOT EXISTS rental_license (
         ON UPDATE CASCADE,
     INDEX (license_number)
 ) ENGINE=InnoDB;
+
+-- Staging table
+CREATE TABLE `raw_scrape` (
+  `address` varchar(255) DEFAULT NULL,
+  `license_expiration_date` date DEFAULT NULL,
+  `existing_license_number` varchar(100) DEFAULT NULL,
+  `property_type` varchar(100) DEFAULT NULL,
+  `total_unit_count` int DEFAULT NULL,
+  `property_manager_name` varchar(255) DEFAULT NULL,
+  `property_manager_address` varchar(255) DEFAULT NULL,
+  `property_manager_city` varchar(100) DEFAULT NULL,
+  `property_manager_state` varchar(50) DEFAULT NULL,
+  `property_manager_zip_code` varchar(50) DEFAULT NULL,
+  `property_manager_telephone` varchar(50) DEFAULT NULL,
+  `property_manager_email_address` varchar(255) DEFAULT NULL,
+  `responsible_officer_name` varchar(255) DEFAULT NULL,
+  `responsible_officer_address` varchar(255) DEFAULT NULL,
+  `responsible_officer_city` varchar(100) DEFAULT NULL,
+  `responsible_officer_state` varchar(50) DEFAULT NULL,
+  `responsible_officer_zip_code` varchar(50) DEFAULT NULL,
+  `responsible_officer_telephone` varchar(50) DEFAULT NULL,
+  `responsible_officer_email_address` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
