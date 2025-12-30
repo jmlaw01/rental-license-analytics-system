@@ -1,0 +1,7 @@
+## How to Run This Project
+
+1. Run the Python ETL scripts in `/etl/` to clean and normalize the raw data.
+2. Execute `schema.sql` to create the database structure.
+3. Execute `load_data.sql` to populate the normalized tables.
+4. Execute `views.sql` to create reporting views.
+5. Open the Power BI file in `/powerbi/` and refresh the data model.
