@@ -30,8 +30,8 @@ The goal is to transform messy, inconsistent source data into a scalable, valida
 ---
 
 ## 🏗️ Architecture
+![architecture_diagram](https://github.com/user-attachments/assets/ab3105d1-6e13-4cb1-8af4-fc45b41811ca)
 
-*[architecture_diagram.pdf](https://github.com/user-attachments/files/24387002/architecture_diagram.pdf)*
 Raw CSVs -> Python ETL (cleaning, normalization, validation) -> MySQL Database (normalized schema) -> SQL Views (reporting layer) -> Power BI Dashboard
 
 ---
