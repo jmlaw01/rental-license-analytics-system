@@ -6,6 +6,17 @@ The goal is to transform messy, inconsistent source data into a scalable, valida
 
 ---
 
+## Tech Stack
+
+- **Python** — ETL pipeline (cleaning, normalization, validation)
+  - `pandas` — data wrangling  
+  - `re` — pattern matching and text cleaning  
+  - `glob` — file discovery and batch processing  
+- **MySQL** — Normalized schema, constraints, reporting views  
+- **SQL** — Modeling, joins, aggregations  
+- **Power BI** — Star schema modeling, DAX, interactive dashboard  
+- **GitHub** — Version control and documentation
+- 
 ## Features
 
 ### **Python ETL Pipeline**
