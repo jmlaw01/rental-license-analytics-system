@@ -91,11 +91,8 @@ Power BI connects to the views and provides:
 
 ## Repository Structure
 
-/etl/               # Python scripts for cleaning, normalization, and loading 
-/sql/
-  schema.sql      # Full normalized schema (tables, keys, constraints) 
-  load_data.sql   # Inserts cleaned data into the schema 
-  views.sql       # Reporting views for Power BI 
+/etl/               # Python scripts for cleaning, normalization, and loading /sql/ schema.sql      # Full normalized schema (tables, keys, constraints) load_data.sql   # Inserts cleaned data into the schema views.sql       # Reporting views for Power BI /powerbi/           # PBIX file and/or dashboard screenshots /docs/              # Architecture diagram, notes, supporting documentation README.md           # Project overview and documentation
+
 /powerbi/         # PBIX file and/or dashboard screenshots 
                   # Download the dashboard:
                   #[Baltimore_City_Visuals.zip](https://github.com/user-attachments/files/24387190/Baltimore_City_Visuals.zip)
