@@ -6,7 +6,7 @@ The goal is to transform messy, inconsistent source data into a scalable, valida
 
 ---
 
-## 🚀 Features
+## Features
 
 ### **Python ETL Pipeline**
 - Cleans and normalizes raw CSV files
@@ -29,14 +29,14 @@ The goal is to transform messy, inconsistent source data into a scalable, valida
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 ![architecture_diagram](https://github.com/user-attachments/assets/ab3105d1-6e13-4cb1-8af4-fc45b41811ca)
 
 Raw CSVs -> Python ETL (cleaning, normalization, validation) -> MySQL Database (normalized schema) -> SQL Views (reporting layer) -> Power BI Dashboard
 
 ---
 
-## ⚠️ Data Challenges & Constraints
+## Data Challenges & Constraints
 
 Real‑world data is messy — these constraints shaped the system’s design:
 
@@ -51,7 +51,7 @@ These constraints justify the normalization, validation logic, and view‑based 
 
 ---
 
-## 🔄 How It Works
+## How It Works
 
 ### **1. Extract**
 Raw CSV files are loaded and profiled for structure, duplicates, and inconsistencies.
@@ -82,14 +82,14 @@ Power BI connects to the views and provides:
 
 ---
 
-## 📊 Dashboard Preview
+## Dashboard Preview
 
 ![Baltimore_City_Visuals_December](https://github.com/user-attachments/assets/9e9366e6-b634-4130-8667-14b9c505d86c)
 ![Baltimore_City_Visuals_April](https://github.com/user-attachments/assets/fed4825e-9b37-40ff-b470-425c49a35213)
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 /etl/               # Python scripts for cleaning, normalization, and loading 
 /sql/
@@ -102,7 +102,7 @@ Power BI connects to the views and provides:
 
 ---
 
-## 🧠 What I Learned
+## What I Learned
 
 - Designing normalized schemas for messy real‑world data  
 - Building reusable SQL views for analytics and BI tools  
@@ -114,7 +114,7 @@ Power BI connects to the views and provides:
 
 ---
 
-## 📌 Future Enhancements
+## Future Enhancements
 
 - Automate ETL with scheduled runs  
 - Add incremental refresh logic  
